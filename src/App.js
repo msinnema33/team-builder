@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Route, Switch, useHistory } from 'react-router-dom';
 
 import './App.css';
+import Form from './Form';
 
 function App() {
   const [member, useMember] = useState({firstName: "", lastName: "", role: "", email: "", id: "" });
@@ -20,10 +21,17 @@ function App() {
       
         Welcome to my Team!<br> 
       </br>
-        Role      Last        First       Email       ID
+        Role      Last        First       Email      
 
       </header>
-
+      <Switch>
+        <Route exact path='/Form'>
+           <Form />
+        </Route>
+        {/* <Route path='/'>
+           <App />
+        </Route> */}
+      </Switch>
       
     </div>
   );
