@@ -14,6 +14,11 @@ function App() {
 
   return (
     <div className="App">
+      <Switch>
+        <Route exact path='/Form'>
+           <Form />
+        </Route>
+      </Switch>
       <header className="App-header">
       {/* <Link to = '/Form'>   */}
       <button onClick ={routeToForm} className="md-button shop-button">Add a Team member</button>
@@ -23,15 +28,12 @@ function App() {
       </br>
         Role      Last        First       Email      
 
-      </header>
-      <Switch>
+      </header> 
+      {/* <Switch>
         <Route exact path='/Form'>
            <Form />
         </Route>
-        {/* <Route path='/'>
-           <App />
-        </Route> */}
-      </Switch>
+      </Switch> */}
       
     </div>
   );
