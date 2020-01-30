@@ -47,6 +47,7 @@ const submitForm = event => {
             placeholder = 'valid email'
             value = {member.email}/>
           </label><br></br>
+          <button type = 'submit'>Add Team Member</button>
           {/* <label>
             ID Number:
             <input name = 'ID' onChange ={onInputChange} type = 'number'

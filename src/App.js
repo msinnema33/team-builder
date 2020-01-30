@@ -5,13 +5,14 @@ import './App.css';
 import Form from './Form.js';
 
 function App() {
-  const [members, setMembers] =useState({
-    firstName: 'Mike',
+  const [members, setMembers] =useState([
+    {firstName: 'Mike',
     lastName: 'Sinnema',
     role: 'Project Manager',
     email: 'mjs@mail.com',
     id: 1
-    });  
+  }
+  ]);  
   
   const history = useHistory();
   const routeToForm = event => {
